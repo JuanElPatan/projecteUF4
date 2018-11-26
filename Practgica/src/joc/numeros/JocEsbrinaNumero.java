@@ -1,10 +1,11 @@
 package joc.numeros;
 
 import joc.JocAbstracte;
+import joc.interfaz.Jugable;
 import comu.Teclado;
 
-public class JocEsbrinaNumero extends JocAbstracte {
-
+public class JocEsbrinaNumero extends JocAbstracte implements Jugable {
+	
 	// Attributes
 	private int numEncertar;
 

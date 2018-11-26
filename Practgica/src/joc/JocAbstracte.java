@@ -9,7 +9,7 @@ public class JocAbstracte {
 	// Constructor
 	public JocAbstracte(int numVidesInicial, String nom) {
 		super();
-		this.numVidesInicial = numVidesInicial;
+		this.setNumVidesInicial(numVidesInicial);
 		this.nom = nom;
 	}
 
@@ -25,6 +25,22 @@ public class JocAbstracte {
 	// Mètodes
 	public void mostraVidesRestants() {
 		System.out.println("Numero de vides actual "+this.numVidesActual+" en el joc \""+this.nom+"\"");
+	}
+
+	public int getNumVidesInicial() {
+		return numVidesInicial;
+	}
+
+	public void setNumVidesInicial(int numVidesInicial) {
+		this.numVidesInicial = numVidesInicial;
+	}
+
+	public int getRecord() {
+		return record;
+	}
+
+	public void setRecord(int record) {
+		this.record = record;
 	}
 
 }
